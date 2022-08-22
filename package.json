@@ -1,0 +1,27 @@
+{
+  "name": "07_06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:go" : "npx cypress open --config-file desktop.env.config.js",
+    "cypress:mobile" : "npx cypress open --config-file mobile.env.config.js",
+    "cypress:desk:chrome:on" : "npx cypress run --browser=chrome --headed --config-file desktop.env.config.js",
+    "cypress:mobile:chrome:off" : "npx cypress run --browser=chrome --headless --config-file mobile.env.config.js",
+    "cypress:desk:electron:off" : "npx cypress run --browser=electron --headless --config-file desktop.env.config.js",
+    "cypress:desk:electron:on" : "npx cypress run --browser=electron --headed --config-file desktop.env.config.js"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.6.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.74.0"
+  }
+}
