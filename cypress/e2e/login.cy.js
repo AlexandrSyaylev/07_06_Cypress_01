@@ -1,6 +1,9 @@
 //const { it } = require("mocha");
 
 describe('Test booksApp on localhost:3000, Tests from lection ', () => {
+  beforeEach( () => {
+    cy.viewport(Cypress.env('viewportWidth'),Cypress.env('viewportHeight'));
+  });
   it('Should open the main page', () => {
     cy.visit("/");
     cy.contains("Books list");
